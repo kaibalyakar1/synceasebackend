@@ -10,7 +10,7 @@ const middleware = require("./middleware/index.js");
 const UserModel = require("./models/userModel.js");
 const MeetingModel = require("./models/meetingModel.js");
 const ShortUniqueId = require("short-unique-id");
-const port = 9000;
+const port = process.env.PORT || 9000;
 require("dotenv").config();
 //db
 mongoose
