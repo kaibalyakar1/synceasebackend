@@ -12,7 +12,7 @@ const MeetingModel = require("./models/meetingModel.js");
 const ShortUniqueId = require("short-unique-id");
 const port = process.env.PORT || 9000;
 require("dotenv").config();
-//db
+//dbs
 mongoose
   .connect(process.env.MONGO_DB_URL)
   .then((result) => {
